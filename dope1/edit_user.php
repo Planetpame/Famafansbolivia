@@ -1,6 +1,6 @@
 
+        <?php include "headeradm.php" ?>
 
-<?php include "../dope1/headeradm.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +38,7 @@
 
   </br>
 <?php
-  session_start();
+  @session_start();
   if(isset($_POST["username"])){
     $un=$_POST["username"];
     $fn=$_POST["fullname"];
@@ -51,7 +51,6 @@
     $sql="UPDATE user SET fullname='$fn',username='$un',email='$e',password='$pwd',link='$f',color_fondo='$fondo' WHERE id=$id";
     $query = $con->query($sql);
     $_SESSION["color_fondo"]=$fondo;
-    header("location:indexa.php");
     
   }
   if(isset($_SESSION["user_id"])){
@@ -62,7 +61,7 @@
 ?>
   <h2>Editar Perfil</h2>
 
-        <form role="form" name="registro" action="edit_user.php" method="post">
+        <form role="form" name="registro" action="edit_user" method="post">
           <div class="form-group">
             <label for="username">Nombre de usuario</label>
             <input type="text" class="form-control" id="username" name="username" value="<?=$r["username"];?>">

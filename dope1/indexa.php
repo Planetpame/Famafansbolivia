@@ -11,8 +11,18 @@
 
     <title>Fama Fans Bolivia</title>
 
+
+
+<link rel="stylesheet" href="rrssb-master/css/rrssb.css" />
+
+
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
@@ -191,10 +201,12 @@
     </div>
     <!-- /.banner -->
 
+
+
+
     <!-- Footer -->
     <?php include "footer.php" ?>
 
-    <?php session_start(); echo $_SESSION["color_fondo"];?>
 
     <script src="js/jquery.js"></script>
 

@@ -1,3 +1,7 @@
+
+
+        <?php include "headerfan.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,10 +24,21 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <style type="text/css">
-        .intro-header{
-            background: <?php session_start(); echo $_SESSION["color_fondo"];?>;
+        
+        footer {
+    background: <?php @session_start(); echo $_SESSION["color_fondo"];?>
         }
+
+
+
+        .content-section-a {
+   
+     background: <?php  echo $_SESSION["color_fondo"];?>
+        }
+}
+}
     </style>
+  
     
 
 </head>
